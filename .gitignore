@@ -1,0 +1,9 @@
+*.class
+*.log
+.idea
+/js
+*target
+.DS_Store
+*.ensime*
+
+node_modules

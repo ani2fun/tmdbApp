@@ -1,0 +1,406 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/qeFO3u2IqbAeIT1Xgo6POqYbCaQ.jpg",
+      "genre_ids": [
+        35,
+        80,
+        9648,
+        28
+      ],
+      "id": 514999,
+      "original_language": "en",
+      "original_title": "Murder Mystery",
+      "overview": "After attending a gathering on a billionaire's yacht during a European vacation, a New York cop and his wife become prime suspects when he's murdered.",
+      "poster_path": "/bSMSO9xupd4R4vwTPqigHn2quLN.jpg",
+      "release_date": "2019-06-14",
+      "title": "Murder Mystery",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 228,
+      "popularity": 83.475
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5tFt6iuGnKapHl5tw0X0cKcnuVo.jpg",
+      "genre_ids": [
+        12,
+        10751,
+        14
+      ],
+      "id": 329996,
+      "original_language": "en",
+      "original_title": "Dumbo",
+      "overview": "A young elephant, whose oversized ears enable him to fly, helps save a struggling circus, but when the circus plans a new venture, Dumbo and his friends discover dark secrets beneath its shiny veneer.",
+      "poster_path": "/279PwJAcelI4VuBtdzrZASqDPQr.jpg",
+      "release_date": "2019-03-27",
+      "title": "Dumbo",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 1261,
+      "popularity": 148.574
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 299537,
+      "original_language": "en",
+      "original_title": "Captain Marvel",
+      "overview": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+      "poster_path": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+      "release_date": "2019-03-06",
+      "title": "Captain Marvel",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 5710,
+      "popularity": 187.601
+    },
+    {
+      "id": 479455,
+      "video": false,
+      "vote_count": 114,
+      "vote_average": 6.2,
+      "title": "Men in Black: International",
+      "release_date": "2019-06-12",
+      "original_language": "en",
+      "original_title": "Men in Black: International",
+      "genre_ids": [
+        28,
+        12,
+        35,
+        878
+      ],
+      "backdrop_path": "/2FYzxgLNuNVwncilzUeCGbOQzP7.jpg",
+      "adult": false,
+      "overview": "The Men in Black have always protected the Earth from the scum of the universe. In this new adventure, they tackle their biggest, most global threat to date: a mole in the Men in Black organization.",
+      "poster_path": "/dPrUPFcgLfNbmDL8V69vcrTyEfb.jpg",
+      "popularity": 253.218
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AiG8iWpFtFSXAdhStWu6qBaqmv9.jpg",
+      "genre_ids": [
+        53,
+        27
+      ],
+      "id": 458723,
+      "original_language": "en",
+      "original_title": "Us",
+      "overview": "Husband and wife Gabe and Adelaide Wilson take their kids to their beach house expecting to unplug and unwind with friends. But as night descends, their serenity turns to tension and chaos when some shocking visitors arrive uninvited.",
+      "poster_path": "/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "release_date": "2019-03-14",
+      "title": "Us",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 1756,
+      "popularity": 110.144
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "genre_ids": [
+        12,
+        878,
+        28
+      ],
+      "id": 299534,
+      "original_language": "en",
+      "original_title": "Avengers: Endgame",
+      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+      "poster_path": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+      "release_date": "2019-04-24",
+      "title": "Avengers: Endgame",
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 6871,
+      "popularity": 111.668
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kmPnDn9mbjD9Vzn1FTclNiSHGNa.jpg",
+      "genre_ids": [
+        53,
+        878
+      ],
+      "id": 505948,
+      "original_language": "en",
+      "original_title": "I Am Mother",
+      "overview": "A teenage girl is raised underground by a robot \"Mother\", designed to repopulate the earth following an extinction event. But their unique bond is threatened when an inexplicable stranger arrives with alarming news.",
+      "poster_path": "/eItrj5GcjvCI3oD3bIcz1A2IL9t.jpg",
+      "release_date": "2019-06-07",
+      "title": "I Am Mother",
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 323,
+      "popularity": 88.618
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aQXTw3wIWuFMy0beXRiZ1xVKtcf.jpg",
+      "genre_ids": [
+        28,
+        878,
+        53,
+        12
+      ],
+      "id": 399579,
+      "original_language": "en",
+      "original_title": "Alita: Battle Angel",
+      "overview": "When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.",
+      "poster_path": "/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+      "release_date": "2019-01-31",
+      "title": "Alita: Battle Angel",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 2067,
+      "popularity": 71.935
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/j2iZourlSz3vlUyfE2LHOveZzDi.jpg",
+      "genre_ids": [
+        18,
+        10749,
+        10752
+      ],
+      "id": 433502,
+      "original_language": "en",
+      "original_title": "The Aftermath",
+      "overview": "In the aftermath of World War II, a British colonel and his wife are assigned to live in Hamburg during the post-war reconstruction, but tensions arise with the German widower who lives with them.",
+      "poster_path": "/slGZ8miznmAZAaDHEz6BKo7f1N5.jpg",
+      "release_date": "2019-03-01",
+      "title": "The Aftermath",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 57,
+      "popularity": 45.432
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nDP33LmQwNsnPv29GQazz59HjJI.jpg",
+      "genre_ids": [
+        9648,
+        10751,
+        35,
+        878,
+        28,
+        12
+      ],
+      "id": 447404,
+      "original_language": "en",
+      "original_title": "Pokémon Detective Pikachu",
+      "overview": "In a world where people collect pocket-size monsters (Pokémon) to do battle, a boy comes across an intelligent monster who seeks to be a detective.",
+      "poster_path": "/wgQ7APnFpf1TuviKHXeEe3KnsTV.jpg",
+      "release_date": "2019-05-03",
+      "title": "Pokémon Detective Pikachu",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 1321,
+      "popularity": 107.924
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mCb3FjW9p2Fl1QZU69uqt5r7n2N.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 505436,
+      "original_language": "fr",
+      "original_title": "Qu'est-ce qu'on a encore fait au bon Dieu ?",
+      "overview": "Claude and Marie Verneuil face a new crisis. The four spouses of their daughters, David, Rachid, Chao and Charles decided to leave France for various reasons. Here they are imagining their lives elsewhere.",
+      "poster_path": "/uT9FhaKYzR8XQg0etoPiqQxaMj8.jpg",
+      "release_date": "2019-01-30",
+      "title": "Serial (Bad) Weddings 2",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 305,
+      "popularity": 35.647
+    },
+    {
+      "id": 400157,
+      "video": false,
+      "vote_count": 116,
+      "vote_average": 6,
+      "title": "Wonder Park",
+      "release_date": "2019-03-14",
+      "original_language": "en",
+      "original_title": "Wonder Park",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        14,
+        10751
+      ],
+      "backdrop_path": "/nJyAdKPnW15IAvC6sLBTE0lp6Dv.jpg",
+      "adult": false,
+      "overview": "The story of a magnificent amusement park where the imagination of a wildly creative girl named June comes alive.",
+      "poster_path": "/8KomINZhIuJeB4oB7k7tkq8tmE.jpg",
+      "popularity": 62.101
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AwbiKGoOXC8VVWi0KeZwkT14hTR.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 433501,
+      "original_language": "en",
+      "original_title": "City of Lies",
+      "overview": "Los Angeles Police Department detective Russell Poole has spent years trying to solve his biggest case -- the murders of The Notorious B.I.G. and Tupac Shakur -- but after two decades, the investigation remains open. Jack Jackson, a reporter desperate to save his reputation and career, is determined to find out why. In search of the truth, the two team up and unravel a growing web of institutional corruption and lies.",
+      "poster_path": "/pK7IYQdtdWtMDBJZfMqDxgMjXEt.jpg",
+      "release_date": "2019-01-10",
+      "title": "City of Lies",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 59,
+      "popularity": 16.23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pGzUGy5EJFfZudzKXXc2kyQN4mu.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 525657,
+      "original_language": "en",
+      "original_title": "Daughter of the Wolf",
+      "overview": "Ex-military specialist Clair Hamilton returns home from her tour in the Middle East due to her father's passing and to claim her inheritance. Her son is then kidnapped and held for ransom by a gang led by a mysterious figure known only as “Father”.",
+      "poster_path": "/ghoNQkJX9Hk1m8GxTsBg4Xez1gn.jpg",
+      "release_date": "2019-06-14",
+      "title": "Daughter of the Wolf",
+      "video": false,
+      "vote_average": 2.8,
+      "vote_count": 3,
+      "popularity": 2.744
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tdVYVR4nIIcmpL0zl39cBfix7Un.jpg",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "id": 416144,
+      "original_language": "en",
+      "original_title": "Hotel Mumbai",
+      "overview": "The true story of the 2008 Taj Mahal Palace Hotel terrorist attack in Mumbai when hotel staff risked their lives to keep everyone safe, and as people make unthinkable sacrifices to protect themselves and their families.",
+      "poster_path": "/4UM3WBgWvAXi9CaBXJjwAMnEY05.jpg",
+      "release_date": "2019-03-14",
+      "title": "Hotel Mumbai",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 123,
+      "popularity": 54.966
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/78PjwaykLY2QqhMfWRDvmfbC6EV.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 490132,
+      "original_language": "en",
+      "original_title": "Green Book",
+      "overview": "Tony Lip, a bouncer in 1962, is hired to drive pianist Don Shirley on a tour through the Deep South in the days when African Americans, forced to find alternate accommodations and services due to segregation laws below the Mason-Dixon Line, relied on a guide called The Negro Motorist Green Book.",
+      "poster_path": "/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg",
+      "release_date": "2018-11-16",
+      "title": "Green Book",
+      "video": false,
+      "vote_average": 8.3,
+      "vote_count": 3523,
+      "popularity": 59.824
+    },
+    {
+      "id": 166428,
+      "video": false,
+      "vote_count": 2056,
+      "vote_average": 7.6,
+      "title": "How to Train Your Dragon: The Hidden World",
+      "release_date": "2019-01-03",
+      "original_language": "en",
+      "original_title": "How to Train Your Dragon: The Hidden World",
+      "genre_ids": [
+        12,
+        16,
+        10751
+      ],
+      "backdrop_path": "/lFwykSz3Ykj1Q3JXJURnGUTNf1o.jpg",
+      "adult": false,
+      "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+      "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+      "popularity": 94.501
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/x7fTahEtTQbbmy4M6XQMrXfLKr6.jpg",
+      "genre_ids": [
+        37,
+        18
+      ],
+      "id": 492565,
+      "original_language": "en",
+      "original_title": "The Kid",
+      "overview": "The story of a young boy who witnesses Billy The Kid's encounter with Sheriff Pat Garrett.",
+      "poster_path": "/8zWFMU70cFbKZ45QWQnsfxV1RPz.jpg",
+      "release_date": "2019-03-08",
+      "title": "The Kid",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 23,
+      "popularity": 25.689
+    },
+    {
+      "id": 320288,
+      "video": false,
+      "vote_count": 648,
+      "vote_average": 6.2,
+      "title": "Dark Phoenix",
+      "release_date": "2019-06-05",
+      "original_language": "en",
+      "original_title": "Dark Phoenix",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "backdrop_path": "/phxiKFDvPeQj4AbkvJLmuZEieDU.jpg",
+      "adult": false,
+      "overview": "The X-Men face their most formidable and powerful foe when one of their own, Jean Grey, starts to spiral out of control. During a rescue mission in outer space, Jean is nearly killed when she's hit by a mysterious cosmic force. Once she returns home, this force not only makes her infinitely more powerful, but far more unstable. The X-Men must now band together to save her soul and battle aliens that want to use Grey's new abilities to rule the galaxy.",
+      "poster_path": "/kZv92eTc0Gg3mKxqjjDAM73z9cy.jpg",
+      "popularity": 279.446
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9QusGjxcYvfPD1THg6oW3RLeNn7.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "id": 297802,
+      "original_language": "en",
+      "original_title": "Aquaman",
+      "overview": "Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne.",
+      "poster_path": "/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+      "release_date": "2018-12-07",
+      "title": "Aquaman",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 6183,
+      "popularity": 50.904
+    }
+  ],
+  "total_pages": 1000,
+  "total_results": 20000
+}

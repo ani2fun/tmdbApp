@@ -1,0 +1,32 @@
+@(title: String, serviceUri: String)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@title</title>
+
+      <!-- Favicons -->
+    <link href="assets/img/movie.ico" rel="shortcut icon" type="image/ico">
+
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- CSS -->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/font-awesome/css/all.css" rel="stylesheet">
+    <link href="assets/lib/mainLayout.css" rel="stylesheet">
+
+   <script src="assets/lib/jquery/dist/jquery.slim.min.js"></script>
+    <script src="assets/lib/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="primary">
+    <div id="app-content" data-serviceUri="@serviceUri"></div>
+
+    <script type="text/javascript" src="assets/client-jsdeps.js"></script>
+    <script type="text/javascript" src="assets/client-opt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+html,
+body,
+#app-content,
+#app-content > div {
+  height: 100%;
+  margin: 0;
+
+}
+
+hr {
+  border: 1px solid #4D4D4D !important;
+  width: 100%;
+}
