@@ -12,7 +12,7 @@ This project use for the client side
 ## Note
 
 Start app locally
-> sbt ~reStart
+> `sbt "~reStart"`
 
 Browser(Chrome)
 Start app in your browser ``http://localhost:9090``
