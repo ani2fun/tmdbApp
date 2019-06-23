@@ -15,7 +15,7 @@ import japgolly.scalajs.react.{ Callback, _ }
 
 // scalastyle:off multiple.string.literals
 object MoviePage {
-  //https://image.tmdb.org/t/p/w185/hEpWvX6Bp79eLxY1kX5ZZJcme5U.jpg
+
   case class Props(movie: Movie, apiClient: ApiClient)
 
   case class State(movieName: String, movie: Movie, tendingMovies: Seq[Movie])
@@ -97,31 +97,7 @@ object MoviePage {
             <.br,
             <.div(
               ^.cls := "row",
-              <.div(
-                ^.cls := "card",
-                <.div(
-                  ^.cls := "row no-gutters",
-                  <.div(
-                    ^.cls := "col-auto",
-                    <.img(^.src := s"https://image.tmdb.org/t/p/w154${state.movie.poster_path.getOrElse(None)}")
-                  ),
-                  <.div(
-                    ^.cls := "col",
-                    <.div(
-                      ^.cls := "card-block px-2",
-                      <.h3(
-                        ^.cls := "card-title",
-                        s"${state.movie.original_title.getOrElse(None)}"
-                      ),
-                      <.p(
-                        ^.cls := "card-text",
-                        s"${state.movie.overview.getOrElse(None)}"
-                      ),
-                      <.span(<.i(s"Release Date: ${state.movie.release_date.getOrElse(None)}"))
-                    )
-                  )
-                )
-              )
+              <.div(Card(state.movie))
             )
           ),
           <.hr,
@@ -131,11 +107,15 @@ object MoviePage {
               ^.cls := "btn btn-outline-success my-2 my-sm-0",
               ^.`type` := "submit",
               ^.onClick ==> trendingMovies(props.apiClient),
-              "Get Trending Movies"
+              "Show"
             )
           ),
-          <.div(<.p(s"${state.tendingMovies.map { _.original_title.getOrElse("") }}")),
-          <.br
+          <.br,
+          <.div(
+            state.tendingMovies.map { movie =>
+              <.div(^.cls := "row", Card(movie), <.br)
+            }.toVdomArray
+          )
         )
       )
   }
@@ -146,12 +126,12 @@ object MoviePage {
       .initialState(
         State(
           MoviesState.movieName,
-          MoviesState.emptyMovie,
+          MoviesState.defaultMovie,
           MoviesState.emptyTrendingMovies
         )
       )
       .renderBackend[Backend]
       .build
 
-  def apply(apiClient: ApiClient): Unmounted[Props, State, Backend] = component(Props(MoviesState.emptyMovie, apiClient))
+  def apply(apiClient: ApiClient): Unmounted[Props, State, Backend] = component(Props(MoviesState.defaultMovie, apiClient))
 }
