@@ -37,3 +37,6 @@ addSbtPlugin("com.lightbend.sbt" % "sbt-javaagent"      % "0.1.4")
 
 // Gatling
 addSbtPlugin("io.gatling" % "gatling-sbt" % "3.0.0")
+
+//Heroku
+addSbtPlugin("com.heroku" % "sbt-heroku" % "2.1.2")

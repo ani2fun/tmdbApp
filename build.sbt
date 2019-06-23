@@ -275,3 +275,11 @@ addCommandAlias(
   "test",
   "; server/test ; sharedJVM/test; sharedJS/test" // client/test
 )
+
+
+// Heroku Deployment
+herokuAppName in Compile := "tmdbdemoapp"
+herokuIncludePaths in Compile := Seq(
+  "server", "server/src/main/resources/application.conf", "server/src/main/public"
+)
+herokuSkipSubProjects in Compile := false
