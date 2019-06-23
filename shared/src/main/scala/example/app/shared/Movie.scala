@@ -7,7 +7,10 @@ package example.app.shared
 import io.circe.generic.semiauto.{ deriveDecoder, deriveEncoder }
 import io.circe.{Decoder, Encoder}
 
-case class TmdbResponse(page: Option[Int], total_results: Option[Int], total_pages: Option[Int], results: Option[Seq[Movie]])
+final case class TmdbResponse(page: Option[Int],
+                              total_results: Option[Int],
+                              total_pages: Option[Int],
+                              results: Option[Seq[Movie]])
 
 object TmdbResponse {
 
@@ -16,7 +19,7 @@ object TmdbResponse {
 
 }
 
-case class Movie(id: Option[Int],
+final case class Movie(id: Option[Int],
                  original_title: Option[String],
                  overview: Option[String],
                  release_date: Option[String],

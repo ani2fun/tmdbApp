@@ -15,8 +15,8 @@ import japgolly.scalajs.react.{ Callback, _ }
 
 // scalastyle:off multiple.string.literals
 object MoviePage {
-
-  case class Props(apiClient: ApiClient)
+  //https://image.tmdb.org/t/p/w185/hEpWvX6Bp79eLxY1kX5ZZJcme5U.jpg
+  case class Props(movie: Movie, apiClient: ApiClient)
 
   case class State(movieName: String, movie: Movie, tendingMovies: Seq[Movie])
 
@@ -34,8 +34,6 @@ object MoviePage {
     // API calls
     def searchMovie(movieName: String, apiClient: ApiClient)(e: ReactEventFromInput): Callback = Callback.future {
       e.preventDefault()
-      Callback.info("movieName to search " + movieName)
-
       for {
         movie <- apiClient.searchMoviesClient.getMovie(movieName)
       } yield {
@@ -96,18 +94,33 @@ object MoviePage {
                 )
               )
             ),
+            <.br,
             <.div(
               ^.cls := "row",
               <.div(
-                <.span(state.movie.id),
-                <.hr,
-                <.span(state.movie.original_title),
-                <.hr,
-                <.span(state.movie.overview),
-                <.hr,
-                <.span(state.movie.release_date),
-                <.hr,
-                <.span(state.movie.poster_path)
+                ^.cls := "card",
+                <.div(
+                  ^.cls := "row no-gutters",
+                  <.div(
+                    ^.cls := "col-auto",
+                    <.img(^.src := s"https://image.tmdb.org/t/p/w154${state.movie.poster_path.getOrElse(None)}")
+                  ),
+                  <.div(
+                    ^.cls := "col",
+                    <.div(
+                      ^.cls := "card-block px-2",
+                      <.h3(
+                        ^.cls := "card-title",
+                        s"${state.movie.original_title.getOrElse(None)}"
+                      ),
+                      <.p(
+                        ^.cls := "card-text",
+                        s"${state.movie.overview.getOrElse(None)}"
+                      ),
+                      <.span(<.i(s"Release Date: ${state.movie.release_date.getOrElse(None)}"))
+                    )
+                  )
+                )
               )
             )
           ),
@@ -120,10 +133,9 @@ object MoviePage {
               ^.onClick ==> trendingMovies(props.apiClient),
               "Get Trending Movies"
             )
-          )
-          /*,
-          <.div(state.tendingMovies.head.originalTitle.get)
-         */
+          ),
+          <.div(<.p(s"${state.tendingMovies.map { _.original_title.getOrElse("") }}")),
+          <.br
         )
       )
   }
@@ -141,5 +153,5 @@ object MoviePage {
       .renderBackend[Backend]
       .build
 
-  def apply(apiClient: ApiClient): Unmounted[Props, State, Backend] = component(Props(apiClient))
+  def apply(apiClient: ApiClient): Unmounted[Props, State, Backend] = component(Props(MoviesState.emptyMovie, apiClient))
 }

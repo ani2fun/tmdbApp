@@ -4,7 +4,7 @@
 
 package example.app.services
 
-import javax.inject.Inject
+import javax.inject.{ Inject, Singleton }
 
 import scala.concurrent.{ ExecutionContext, Future }
 
@@ -19,13 +19,15 @@ import io.circe.ParsingFailure
 import io.circe.parser._
 import org.slf4j.{ Logger, LoggerFactory }
 
+@Singleton
+// scalastyle:off multiple.string.literals
 class MovieService @Inject()(implicit ex: ExecutionContext) extends ConfigService {
 
   private val log: Logger   = LoggerFactory.getLogger(getClass)
   implicit val system       = ActorSystem()
   implicit val materializer = ActorMaterializer()
 
-  val http = Http(system)
+  private val http = Http(system)
 
   def searchMovieByName(name: String): Future[Option[Seq[Movie]]] =
     for {
@@ -39,13 +41,11 @@ class MovieService @Inject()(implicit ex: ExecutionContext) extends ConfigServic
       // Get Decoder result
       val decoderResult: Option[TmdbResponse] = parsed.toOption.flatMap(_.toOption)
 
-      /* Return Single movie from Seq[Movie] from the TmdbResponse results
-       * As the closest matching movie of your search return by TMDB API
-       */
+      // Return Seq[Movie] from the TmdbResponse results
       decoderResult.map(_.results.head)
     }
 
-  def searchMovieByNameHttpReq(movieName: String): Future[HttpResponse] = {
+  private def searchMovieByNameHttpReq(movieName: String): Future[HttpResponse] = {
     val queryString = Seq(
       s"api_key=$apiKey",
       s"include_adult=false",
@@ -77,7 +77,7 @@ class MovieService @Inject()(implicit ex: ExecutionContext) extends ConfigServic
       decoderResult.map(_.results.head)
     }
 
-  def getTrendingMoviesHttpReq(mediaType: String, timeWindow: String): Future[HttpResponse] = {
+  private def getTrendingMoviesHttpReq(mediaType: String, timeWindow: String): Future[HttpResponse] = {
 
     val akkaUri = Uri(s"${tmdbAPI}trending/$mediaType/$timeWindow?api_key=$apiKey")
 

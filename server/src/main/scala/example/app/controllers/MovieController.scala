@@ -6,18 +6,15 @@ package example.app.controllers
 
 import javax.inject.{ Inject, Singleton }
 
-import scala.collection.immutable
 import scala.concurrent.ExecutionContext
 import scala.util.{ Failure, Success }
 
-import akka.http.scaladsl.marshalling.{ Marshal, ToEntityMarshaller }
 import akka.http.scaladsl.model.ContentTypes._
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.model.headers.`Content-Type`
 import akka.http.scaladsl.server.{ Directives, Route }
 import example.app.services.{ ConfigService, MovieService }
 import io.circe.syntax._
-import io.circe.{ Encoder, Json }
 
 @Singleton
 // scalastyle:off multiple.string.literals

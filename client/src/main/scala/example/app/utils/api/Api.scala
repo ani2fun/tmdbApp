@@ -12,6 +12,7 @@ import japgolly.scalajs.react.Callback
 import org.scalajs.dom.XMLHttpRequest
 import org.scalajs.dom.ext.{ Ajax => FutureAjax }
 
+// scalastyle:off multiple.string.literals
 trait Api {
   val MaxPaginationSize = 10000
 
