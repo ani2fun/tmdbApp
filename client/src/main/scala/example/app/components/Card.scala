@@ -36,7 +36,12 @@ object Card {
                 ^.cls := "card-text",
                 s"${props.movie.overview.getOrElse(None)}"
               ),
-              <.span(<.i(s"Release Date: ${props.movie.release_date.getOrElse(None)}"))
+              <.span(
+                <.i(
+                  <.b("Release Date: "),
+                  s"${props.movie.release_date.getOrElse(None)}"
+                )
+              )
             )
           )
         )
