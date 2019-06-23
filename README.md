@@ -14,11 +14,15 @@ This project use for the client side
 Start app locally
 > sbt ~reStart
 
-Local EndPoint to test -> 
-GET -> ``http://localhost:9090/findmovie?movieName="avengers"``
+Browser(Chrome)
+Start app in your browser ``http://localhost:9090``
+- Enter a movie name and click button search to search for movie.
+- Click button `Get Trending Movies` to get trending movies list.(wip: look into the developers Networks tab for the http response for trending movies)
 
-movie search by name -> GET `https://api.themoviedb.org/3/search/movie?api_key=5fdcb6eafc5f7c6b238952774693c9a9&include_adult=false&page=1&language=en-US&query=the+avengers`
-trending movies -> GET `https://api.themoviedb.org/3/trending/movie/day?api_key=5fdcb6eafc5f7c6b238952774693c9a9&page=1`
+
+Backend API EndPoint to test locally -> 
+GET -> ``http://localhost:9090/findmovie?movieName="avengers"``
+GET -> ``http://localhost:9090/trending``
 
 
 
