@@ -21,7 +21,7 @@ Start app in your browser ``http://localhost:9090``
 
 
 Backend API EndPoint to test locally -> 
-GET -> ``http://localhost:9090/findmovie?movieName="avengers"``
+GET -> ``http://localhost:9090/findmovie?moviename="avengers"``
 GET -> ``http://localhost:9090/trending``
 
 
