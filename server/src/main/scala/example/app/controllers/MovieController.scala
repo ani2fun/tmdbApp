@@ -65,27 +65,4 @@ class MovieController @Inject()(implicit val ec: ExecutionContext, val movieServ
     }
   }
 
-  def send(statusCode: StatusCode): Route = complete(statusCode)
-
-  def send[T](statusCode: StatusCode, content: T, headers: immutable.Seq[HttpHeader] = Nil)(
-      implicit marshaller: ToEntityMarshaller[T],
-      ec: ExecutionContext
-  ): Route = {
-    val response = Marshal(content)
-      .to[ResponseEntity](marshaller, ec)
-      .map(entity => {
-        HttpResponse(statusCode, headers = headers).withEntity(entity)
-      })
-    complete(response)
-  }
-
-  def sendJson[T](statusCode: StatusCode, content: T)(implicit encoder: Encoder[T], ec: ExecutionContext): Route =
-    sendJson(statusCode, content.asJson)
-
-  def sendJson[T](content: T)(implicit encoder: Encoder[T], ec: ExecutionContext): Route =
-    sendJson(StatusCodes.OK, content)
-
-  def sendJson(statusCode: StatusCode, json: Json)(implicit ec: ExecutionContext): Route =
-    send(statusCode, Option(json.noSpaces))
-
 }
