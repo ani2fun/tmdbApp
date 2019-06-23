@@ -1,16 +1,318 @@
 {
   "page": 1,
-  "total_results": 23,
-  "total_pages": 2,
+  "total_results": 127,
+  "total_pages": 7,
   "results": [
     {
-      "vote_count": 19673,
+      "vote_count": 12847,
+      "id": 1771,
+      "video": false,
+      "vote_average": 6.9,
+      "title": "Captain America: The First Avenger",
+      "popularity": 40.749,
+      "poster_path": "\/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+      "original_language": "en",
+      "original_title": "Captain America: The First Avenger",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "backdrop_path": "\/pmZtj1FKvQqISS6iQbkiLg5TAsr.jpg",
+      "adult": false,
+      "overview": "During World War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier Captain America to aid in the war effort. Rogers must stop the Red Skull – Adolf Hitler's ruthless head of weaponry, and the leader of an organization that intends to use a mysterious device of untold powers for world domination.",
+      "release_date": "2011-07-22"
+    },
+    {
+      "vote_count": 6,
+      "id": 47369,
+      "video": false,
+      "vote_average": 7,
+      "title": "Avenger",
+      "popularity": 2.246,
+      "poster_path": "\/gub3U5fxRDFyiw8mxpErfcq03li.jpg",
+      "original_language": "en",
+      "original_title": "Avenger",
+      "genre_ids": [
+        10770,
+        28,
+        53
+      ],
+      "backdrop_path": "\/d3qo3GJxvhZPRR8N22wDPKPxTGF.jpg",
+      "adult": false,
+      "overview": "After his own daughter was killed in Panama in 1994, former CIA agent Calvin Dexter became a private 'specialist' in cases which wouldn't reach justice trough the regular legal channels. Two years later he accepts to find Richard 'Ricky' Edmunds for his pa, influential rich businessman Stephen Edmonds. Ricky for a private Canadian war victims charity in Bosnia and went missing. Dexter discovers Ricky was beaten to pulp and drowned for no other crime then helping street boys from the other side by Zoran Zilic and his Serbian paramilitary 'order'. He offers Steven to 'finish the job' as such war criminals don't go to trial. But deputy CIA director Paul Devereaux cares only for a nuclear arms project he wants to use Zilic for. So CIA troubleshooter Frank McBride is ordered to protect him and handle Dexter.",
+      "release_date": "2006-04-09"
+    },
+    {
+      "vote_count": 205,
+      "id": 15239,
+      "video": false,
+      "vote_average": 6.5,
+      "title": "The Toxic Avenger",
+      "popularity": 7.697,
+      "poster_path": "\/z9RHyAvshVHgJE5Qe7Iu3EmxFgU.jpg",
+      "original_language": "en",
+      "original_title": "The Toxic Avenger",
+      "genre_ids": [
+        878,
+        28,
+        35,
+        27
+      ],
+      "backdrop_path": "\/7qAk9JKiAfFKVVvHdEzBSICKxFD.jpg",
+      "adult": false,
+      "overview": "Tromaville has a monstrous new hero. The Toxic Avenger is born when mop boy Melvin Junko falls into a vat of toxic waste. Now evildoers will have a lot to lose.",
+      "release_date": "1984-05-01"
+    },
+    {
+      "vote_count": 53,
+      "id": 27601,
+      "video": false,
+      "vote_average": 6.6,
+      "title": "Citizen Toxie: The Toxic Avenger IV",
+      "popularity": 8.312,
+      "poster_path": "\/evB9pQHF1qR2UQtuApbaigcZwG5.jpg",
+      "original_language": "en",
+      "original_title": "Citizen Toxie: The Toxic Avenger IV",
+      "genre_ids": [
+        35,
+        27
+      ],
+      "backdrop_path": "\/r6cwSfNPL8Q8bBY5PNNDbVmDzU7.jpg",
+      "adult": false,
+      "overview": "When the notorious Diaper Mafia take hostage the Tromaville School for the Very Special, only the Toxic Avenger and his morbidly obese sidekick Lardass can save Tromaville.",
+      "release_date": "2001-11-01"
+    },
+    {
+      "vote_count": 4,
+      "id": 87302,
+      "video": false,
+      "vote_average": 4.1,
+      "title": "Alien Space Avenger",
+      "popularity": 3.521,
+      "poster_path": "\/fMslr5h6bYRaFcBLuZhHjXIai0E.jpg",
+      "original_language": "en",
+      "original_title": "Alien Space Avenger",
+      "genre_ids": [
+        878,
+        27,
+        35
+      ],
+      "backdrop_path": "\/ovzPjF5jYdOxSwuglNw8wC6AIzD.jpg",
+      "adult": false,
+      "overview": "In 1939 a spaceship carrying four alien escaped prisoners crash-lands on Earth and the aliens take over the bodies of four locals. Fifty years later the aliens find out that an artist has written a comic book called \"Space Avenger,\" which they believe is about them. They go to New York to try to kill the artist.",
+      "release_date": "1989-08-01"
+    },
+    {
+      "vote_count": 65,
+      "id": 28165,
+      "video": false,
+      "vote_average": 5.2,
+      "title": "The Toxic Avenger Part II",
+      "popularity": 4.528,
+      "poster_path": "\/42EWRhEjwTpPwqDcL7UemewBlLw.jpg",
+      "original_language": "en",
+      "original_title": "The Toxic Avenger Part II",
+      "genre_ids": [
+        35,
+        27,
+        28
+      ],
+      "backdrop_path": "\/yyKXfBqIRiobVsD1wc9VQcx1Kql.jpg",
+      "adult": false,
+      "overview": "The Toxic Avenger is lured to Tokyo, Japan by the evil corporation Apocalypse Inc. So while the Toxic Avenger is fighting crime in Tokyo, Apocalypse Inc. spread evil in Tromaville.",
+      "release_date": "1989-02-24"
+    },
+    {
+      "vote_count": 3,
+      "id": 174624,
+      "video": false,
+      "vote_average": 5,
+      "title": "Mask of the Avenger",
+      "popularity": 1.834,
+      "poster_path": "\/9NifTAnZf938zVYVvFNoYdT3uHs.jpg",
+      "original_language": "en",
+      "original_title": "Mask of the Avenger",
+      "genre_ids": [
+        12,
+        10749
+      ],
+      "backdrop_path": "\/52bLEnEZjSNYisNJwl3N8ZlPZNi.jpg",
+      "adult": false,
+      "overview": "Costume swashbuckler with heroic John Derek battling evil Anthony Quinn.",
+      "release_date": "1951-06-27"
+    },
+    {
+      "vote_count": 1,
+      "id": 517289,
+      "video": false,
+      "vote_average": 10,
+      "title": "The Toxic Avenger: The Musical",
+      "popularity": 2.204,
+      "poster_path": "\/orkWyM0GHSN1wfShZGS79ARXnPk.jpg",
+      "original_language": "en",
+      "original_title": "The Toxic Avenger: The Musical",
+      "genre_ids": [
+        35,
+        878
+      ],
+      "backdrop_path": "\/5DOQQ8thUseOkYgIAbRcCWK6i9U.jpg",
+      "adult": false,
+      "overview": "Based on Lloyd Kaufman’s cult 1984 comedy film, The Toxic Avenger The Musical tells the story of the citizens of Tromaville who are crying out for a hero. Enter nerdy Melvin Ferd the Third, an aspiring earth scientist, determined to clean up the state’s major toxic waste problem. When a corrupt Mayor and her government goons get wind of his plans, they vow to stop this heroic feat. Melvin is attacked and tossed into a vat of toxic waste... transforming him instantly into The Toxic Avenger, New Jersey’s first superhero! Toxie is a 7-foot mutant freak with superhuman strength and a supersized heart to match. His aims are to save heavily polluted New Jersey, end global warming, win the heart of the prettiest (blindest) librarian in town - and get home in time for dinner!",
+      "release_date": "2018-04-07"
+    },
+    {
+      "vote_count": 49,
+      "id": 28169,
+      "video": false,
+      "vote_average": 4.6,
+      "title": "The Toxic Avenger Part III: The Last Temptation of Toxie",
+      "popularity": 3.327,
+      "poster_path": "\/qoXXzqHkMStO4Ws8nmE7xM73NMf.jpg",
+      "original_language": "en",
+      "original_title": "The Toxic Avenger Part III: The Last Temptation of Toxie",
+      "genre_ids": [
+        35,
+        27,
+        28,
+        878
+      ],
+      "backdrop_path": "\/sqKF8h44aJkWHiF7sYKbOWZ2qbC.jpg",
+      "adult": false,
+      "overview": "Toxie finds he has nothing to do as a superhero, as he has ridden his city of evil. So he decides to go to work for a major corporation, which he discovers may be the evilest of all his adversaries.",
+      "release_date": "1989-11-24"
+    },
+    {
+      "vote_count": 1,
+      "id": 146041,
+      "video": false,
+      "vote_average": 4,
+      "title": "Naked Avenger",
+      "popularity": 0.873,
+      "poster_path": "\/g1LrmD9nxBswMaEsftYNJaGNAw6.jpg",
+      "original_language": "en",
+      "original_title": "Naked Avenger",
+      "genre_ids": [],
+      "backdrop_path": "\/7mIgPtLT9W77nwW2gUykwG3mHME.jpg",
+      "adult": false,
+      "overview": "This movie follows a young girl, whose boyfriend has left her stranded on the side of the road without a car. Seeking only to get to her job, to pay her bills, she is picked up by a scout for the seedy underworld of white slavery and prostitution. With this, the action begins...",
+      "release_date": "2008-02-11"
+    },
+    {
+      "vote_count": 6903,
+      "id": 299534,
+      "video": false,
+      "vote_average": 8.4,
+      "title": "Avengers: Endgame",
+      "popularity": 131.296,
+      "poster_path": "\/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+      "original_language": "en",
+      "original_title": "Avengers: Endgame",
+      "genre_ids": [
+        12,
+        878,
+        28
+      ],
+      "backdrop_path": "\/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "adult": false,
+      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+      "release_date": "2019-04-24"
+    },
+    {
+      "vote_count": 0,
+      "id": 332884,
+      "video": false,
+      "vote_average": 0,
+      "title": "The Avenger",
+      "popularity": 0.841,
+      "poster_path": "\/kNZ15pwbmqtwitUN8NcDCD4PEXv.jpg",
+      "original_language": "en",
+      "original_title": "Al-muntaqim",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "Directed by Salah Abouseif.",
+      "release_date": "1947-01-02"
+    },
+    {
+      "vote_count": 0,
+      "id": 483127,
+      "video": false,
+      "vote_average": 0,
+      "title": "Desperate Avenger",
+      "popularity": 0.84,
+      "poster_path": "\/h5q8pF0bAbflzD6xfSe7n3rqepm.jpg",
+      "original_language": "zh",
+      "original_title": "亡命星",
+      "genre_ids": [
+        28
+      ],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "The story begins with a feud between two families in the early days of the Republic of China. One family side’s with the Japaneseand the other is totally wiped out. Enter our hero who resolves to wreak revenge on the murderous traitors — its furious kung fu fighting all the way!",
+      "release_date": "1973-11-09"
+    },
+    {
+      "vote_count": 1,
+      "id": 139003,
+      "video": false,
+      "vote_average": 4,
+      "title": "The Dark Avenger",
+      "popularity": 1.123,
+      "poster_path": "\/7ZjIPlWp3DgIJWSNrRzZvVfwiMx.jpg",
+      "original_language": "en",
+      "original_title": "The Dark Avenger",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "An acid-scarred judge turns masked avenger, backed by an electronics expert and her crime lab.",
+      "release_date": "1990-10-11"
+    },
+    {
+      "vote_count": 1,
+      "id": 94740,
+      "video": false,
+      "vote_average": 2,
+      "title": "The Double-D Avenger",
+      "popularity": 1.371,
+      "poster_path": "\/sKn0x1HJ2Jr7up3UIAtwGocqYtE.jpg",
+      "original_language": "en",
+      "original_title": "The Double-D Avenger",
+      "genre_ids": [
+        28,
+        35
+      ],
+      "backdrop_path": "\/aIVbSZkZ9sRJ6jAB6r6pxlsWfJc.jpg",
+      "adult": false,
+      "overview": "Three of the biggest and bustiest Russ Meyer stars - Kitten Natividad, Haji, and Raven De La Croix - make a comeback in 'The Double-D Avenger,' the first in a series of sexy action\/comedy feature films by William Winckler Productions. Big, busty Chastity Knott must use her new amazing abilities as the super-stacked costumed crime fighter, the Double-D Avenger, to stop villainous bikini bar owner Al Purplewood and his sexy, murderous strippers.",
+      "release_date": "2001-09-17"
+    },
+    {
+      "vote_count": 5,
+      "id": 448357,
+      "video": true,
+      "vote_average": 6.9,
+      "title": "Captain America: The First Avenger - Heightened Technology",
+      "popularity": 1.863,
+      "poster_path": "\/2GvmFcpKmpKqJbKtAcHrAfeL3WV.jpg",
+      "original_language": "en",
+      "original_title": "Captain America: The First Avenger - Heightened Technology",
+      "genre_ids": [
+        99
+      ],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "A brief piece that looks at the \"secret arms race\" that plays out in the film and the resultant future-inspired weapons and vehicles that appear in the movie.",
+      "release_date": "2011-10-25"
+    },
+    {
+      "vote_count": 19713,
       "id": 24428,
       "video": false,
       "vote_average": 7.6,
       "title": "The Avengers",
-      "popularity": 50.289,
-      "poster_path": "/cezWGskPY5x7GaglTTRN4Fugfb8.jpg",
+      "popularity": 57.625,
+      "poster_path": "\/cezWGskPY5x7GaglTTRN4Fugfb8.jpg",
       "original_language": "en",
       "original_title": "The Avengers",
       "genre_ids": [
@@ -18,365 +320,64 @@
         28,
         12
       ],
-      "backdrop_path": "/hbn46fQaRmlpBuUrEiFqv0GDL6Y.jpg",
+      "backdrop_path": "\/hbn46fQaRmlpBuUrEiFqv0GDL6Y.jpg",
       "adult": false,
       "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
       "release_date": "2012-04-25"
     },
     {
-      "vote_count": 337,
-      "id": 9320,
-      "video": false,
-      "vote_average": 4.3,
-      "title": "The Avengers",
-      "popularity": 9.366,
-      "poster_path": "/zxjJ2IxhilZLzl8eXjj7S0apZ7k.jpg",
-      "original_language": "en",
-      "original_title": "The Avengers",
-      "genre_ids": [
-        53,
-        878
-      ],
-      "backdrop_path": "/8YW4rwWQgC2JRlBcpStMNUko13k.jpg",
-      "adult": false,
-      "overview": "British Ministry agent John Steed, under direction from \"Mother\", investigates a diabolical plot by arch-villain Sir August de Wynter to rule the world with his weather control machine. Steed investigates the beautiful Doctor Mrs. Emma Peel, the only suspect, but simultaneously falls for her and joins forces with her to combat Sir August.",
-      "release_date": "1998-08-13"
-    },
-    {
-      "vote_count": 140,
-      "id": 14609,
-      "video": false,
-      "vote_average": 6.5,
-      "title": "Ultimate Avengers",
-      "popularity": 8.768,
-      "poster_path": "/pmNYggLktcWHzQeCru5ywL4OiRH.jpg",
-      "original_language": "en",
-      "original_title": "Ultimate Avengers",
-      "genre_ids": [
-        28,
-        16,
-        12,
-        878
-      ],
-      "backdrop_path": "/mZO4V0ALx15QTgWr4SaXYGT7i60.jpg",
-      "adult": false,
-      "overview": "When a nuclear missile was fired at Washington in 1945, Captain America managed to detonate it in the upper atmosphere. But then he fell miles into the icy depths of the North Atlantic, where he remained lost for over sixty years. But now, with the world facing the very same evil, Captain America must rise again as our last hope for survival.",
-      "release_date": "2006-02-21"
-    },
-    {
-      "vote_count": 121,
-      "id": 14611,
-      "video": false,
-      "vote_average": 6.4,
-      "title": "Ultimate Avengers 2",
-      "popularity": 10.604,
-      "poster_path": "/u7vvexSU81Qk20yU7Vog23Ogob.jpg",
-      "original_language": "en",
-      "original_title": "Ultimate Avengers 2",
-      "genre_ids": [
-        12,
-        16,
-        28,
-        878
-      ],
-      "backdrop_path": "/85NqI4WuCim6dZexmTPUAi13Af0.jpg",
-      "adult": false,
-      "overview": "Mysterious Wakanda lies in the darkest heart of Africa, unknown to most of the world. An isolated land hidden behind closed borders, fiercely protected by its young king - the Black Panther. But when brutal alien invaders attack, the threat leaves the Black Panther with no option but to go against the sacred decrees of his people and ask for help from outsiders.",
-      "release_date": "2006-08-08"
-    },
-    {
-      "vote_count": 11,
-      "id": 65591,
-      "video": false,
-      "vote_average": 6.7,
-      "title": "The New Adventures of the Elusive Avengers",
-      "popularity": 3.819,
-      "poster_path": "/cVg2esz4zheJo6iCA3FhkQtJ3NR.jpg",
-      "original_language": "ru",
-      "original_title": "Novye Priklyucheniya Neulovimykh",
-      "genre_ids": [
-        28,
-        12,
-        10751
-      ],
-      "backdrop_path": "/6ajw8PjpnelE6l28VZRB6PX4KM.jpg",
-      "adult": false,
-      "overview": "A brilliant continuation of the saga, now in the city. The target of young patriots is a map held in the safe locker in the headquarters of secret police!",
-      "release_date": "1968-06-06"
-    },
-    {
-      "vote_count": 0,
-      "id": 432413,
-      "video": false,
-      "vote_average": 0,
-      "title": "The Avengers",
-      "popularity": 0.6,
-      "poster_path": "/dqDoCzAsYC4W6GHP9eiXtvPoiRh.jpg",
-      "original_language": "en",
-      "original_title": "The Avengers",
-      "genre_ids": [
-        12
-      ],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "The attractive Argentine Don Careless is an adventurer and an excellent swordsman. Don is in love with Maria Moreno, since he had to emerge her jewels and had thereby to kill a shark. Don tries to prevent the forced marriage of Mary with the ruthless revolutionary Colonel Luis Corral. An armed clash between Don and Luis seems inevitable.",
-      "release_date": "1950-06-10"
-    },
-    {
-      "vote_count": 6,
-      "id": 448366,
-      "video": true,
-      "vote_average": 8.5,
-      "title": "Building the Dream: Assembling the Avengers",
-      "popularity": 1.111,
-      "poster_path": "/2RDUQpzhJHVzObkL4ZxwJkbKYSz.jpg",
-      "original_language": "en",
-      "original_title": "Building the Dream: Assembling the Avengers",
-      "genre_ids": [
-        99
-      ],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "This 90-minute feature will show how the films Iron Man, The Incredible Hulk, Iron Man 2, Thor, and Captain America: The First Avenger were conceived and led to the greatest super hero team ever assembled on screen The Avengers.",
-      "release_date": "2012-09-25"
-    },
-    {
       "vote_count": 3,
-      "id": 448368,
-      "video": true,
-      "vote_average": 7.3,
-      "title": "The Avengers: A Visual Journey",
-      "popularity": 0.832,
-      "poster_path": "/2kBT7KONKQTIhkMc2ZtPU11E8Ky.jpg",
-      "original_language": "en",
-      "original_title": "The Avengers: A Visual Journey",
-      "genre_ids": [],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "Joss Whedon and others in interviews discussing the aims for this new franchise.",
-      "release_date": "2012-09-25"
-    },
-    {
-      "vote_count": 7,
-      "id": 109088,
-      "video": false,
-      "vote_average": 5.6,
-      "title": "The Shaolin Avengers",
-      "popularity": 4.75,
-      "poster_path": "/dCOunTkqPJR8EtlR4LhMikgLVXB.jpg",
-      "original_language": "zh",
-      "original_title": "Fang Shih Yu yu Hu Hui Chien",
-      "genre_ids": [
-        28
-      ],
-      "backdrop_path": "/cx3GroQGuwJGYfhD13iLyNMV9X8.jpg",
-      "adult": false,
-      "overview": "The famous story of the Shaolin Temple's betrayal by the White-Browed Hermit, and the subsequent revenge by Shaolin firebrand Fang Shih-yu, is the stuff of legend. It has been filmed many times by many directors, but few are remembered as fondly as this production. The potent combination of director Chang Cheh and international idol Alexander Fu Sheng caught lightning in a lens.",
-      "release_date": "1976-06-18"
-    },
-    {
-      "vote_count": 0,
-      "id": 392031,
-      "video": false,
-      "vote_average": 0,
-      "title": "Avengers of the Reef",
-      "popularity": 0.6,
-      "poster_path": "/imTUeuHuxVLxC7sxKqi2G0RPF7k.jpg",
-      "original_language": "en",
-      "original_title": "Avengers of the Reef",
-      "genre_ids": [],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "This Australian children's film is about scientist Bill Stewart goes to Fiji with his son Tim to investigate the appearance of the Crown of Thorns starfish in the reefs off the island.",
-      "release_date": "1973-10-20"
-    },
-    {
-      "vote_count": 0,
-      "id": 535158,
-      "video": false,
-      "vote_average": 0,
-      "title": "The Avengers Prelude",
-      "popularity": 0.6,
-      "poster_path": null,
-      "original_language": "en",
-      "original_title": "The Avengers Prelude",
-      "genre_ids": [],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "Custom FanRes Release",
-      "release_date": ""
-    },
-    {
-      "vote_count": 3,
-      "id": 448364,
-      "video": true,
-      "vote_average": 6.7,
-      "title": "The Avengers: Assembling the Ultimate Team",
-      "popularity": 0.686,
-      "poster_path": "/aXFC4y051yx6C7eQcemt6nPkLDa.jpg",
-      "original_language": "en",
-      "original_title": "The Avengers: Assembling the Ultimate Team",
-      "genre_ids": [
-        99
-      ],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "Joss Whedon and others in interviews discussing the aims for this new franchise.",
-      "release_date": "2012-09-25"
-    },
-    {
-      "vote_count": 1,
-      "id": 487555,
-      "video": false,
-      "vote_average": 8,
-      "title": "The Avengers: Earth's Mightiest Heroes - Prelude",
-      "popularity": 0.6,
-      "poster_path": "/3o7MpOaDkeAcvxqEjgbIcXrcepB.jpg",
-      "original_language": "en",
-      "original_title": "The Avengers: Earth's Mightiest Heroes - Prelude",
-      "genre_ids": [
-        16
-      ],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "A 110 minute prelude to the 2010 animated series, consisting of five-and-a-half-minute chapters created from footage from season-one episodes, premiered online and on Disney XD on September 22, 2010. Series supervising producer Josh Fine said the goal was to \"let us explore the individual members of the team in their own ongoing adventures ... do a lot of character development and set the stage for the rest of the season\".",
-      "release_date": "2010-09-22"
-    },
-    {
-      "vote_count": 13457,
-      "id": 99861,
-      "video": false,
-      "vote_average": 7.3,
-      "title": "Avengers: Age of Ultron",
-      "popularity": 44.383,
-      "poster_path": "/t90Y3G8UGQp0f0DrP60wRu9gfrH.jpg",
-      "original_language": "en",
-      "original_title": "Avengers: Age of Ultron",
-      "genre_ids": [
-        28,
-        12,
-        878
-      ],
-      "backdrop_path": "/rFtsE7Lhlc2jRWF7SRAU0fvrveQ.jpg",
-      "adult": false,
-      "overview": "When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
-      "release_date": "2015-04-22"
-    },
-    {
-      "vote_count": 13951,
-      "id": 299536,
-      "video": false,
-      "vote_average": 8.3,
-      "title": "Avengers: Infinity War",
-      "popularity": 80.773,
-      "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
-      "original_language": "en",
-      "original_title": "Avengers: Infinity War",
-      "genre_ids": [
-        12,
-        28,
-        14
-      ],
-      "backdrop_path": "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
-      "adult": false,
-      "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
-      "release_date": "2018-04-25"
-    },
-    {
-      "vote_count": 29,
-      "id": 40081,
-      "video": false,
-      "vote_average": 6.7,
-      "title": "Crippled Avengers",
-      "popularity": 6.264,
-      "poster_path": "/hWgyQ1Yv9tHz0m8eBzKbPkLjtrD.jpg",
-      "original_language": "zh",
-      "original_title": "残缺",
-      "genre_ids": [
-        28,
-        18
-      ],
-      "backdrop_path": "/5nwuBYksiGkrACCVgq086L9zwWm.jpg",
-      "adult": false,
-      "overview": "Crippled Avengers is a 1978 Shaw Brothers kung fu film directed by Chang Cheh and starring four members of the Venom Mob. It has been released in North America as Mortal Combat and Return of the 5 Deadly Venoms. The film follows a group of martial artists seeking revenge after being crippled by Tu Tin-To (Chen Kuan Tai), a martial arts master, and his son (Lu Feng).",
-      "release_date": "1978-12-20"
-    },
-    {
-      "vote_count": 4,
-      "id": 64128,
-      "video": false,
-      "vote_average": 5.5,
-      "title": "The Day Will Dawn",
-      "popularity": 1.319,
-      "poster_path": "/hKWIeFDfaTnar4zsLwAP8AktSma.jpg",
-      "original_language": "en",
-      "original_title": "The Day Will Dawn",
-      "genre_ids": [
-        18,
-        10752
-      ],
-      "backdrop_path": "/2lQ4jaCeIyNe03XNN2waqIOrlLS.jpg",
-      "adult": false,
-      "overview": "Horse race tipster and journalist Metcalfe is picked for the job of foreign correspondent in Norway when Hitler invades Poland. On the way to Norway his boat is attacked by a German U-Boat, however when he tells the navy about it they disbelief him and, to make matters worse, he is removed from his job. When German forces invade Norway, Metcalfe returns determined to uncover what is going on and stop the Germans in their tracks.",
-      "release_date": "1942-06-08"
-    },
-    {
-      "vote_count": 14,
-      "id": 41979,
-      "video": false,
-      "vote_average": 7.3,
-      "title": "The Elusive Revengers",
-      "popularity": 2.611,
-      "poster_path": "/tEI0TeBPa9kIAQT2hX0qq4Fys0f.jpg",
-      "original_language": "ru",
-      "original_title": "Неуловимые мстители",
-      "genre_ids": [
-        28,
-        12,
-        10751
-      ],
-      "backdrop_path": "/yFqQT8DrDBb5K56JfXHwkxp8S08.jpg",
-      "adult": false,
-      "overview": "Dan'ka's and Ksanka's childhood in the village has been brutally ended when their father was killed by the White Guard officer in front of their eyes. Seeking revenge they join forces with an intellectual from the city Valerka and jipsy Yashka, but before they get close to their enemy they have to help their village and advancing Red Army.",
-      "release_date": "1966-06-06"
-    },
-    {
-      "vote_count": 1,
-      "id": 413553,
+      "id": 74315,
       "video": false,
       "vote_average": 6,
-      "title": "The Young Avengeress",
-      "popularity": 0.912,
-      "poster_path": "/55cHT7Bd6jJywKuSLpZuvmeIYft.jpg",
-      "original_language": "zh",
-      "original_title": "十三妹",
+      "title": "The Invisible Avenger",
+      "popularity": 0.931,
+      "poster_path": "\/5NVkj8Ks3yuX1VyyhAohTjuoEWz.jpg",
+      "original_language": "en",
+      "original_title": "The Invisible Avenger",
       "genre_ids": [
+        18,
         28,
-        12
+        53
       ],
+      "backdrop_path": "\/9LcruHyYrxXaQWIH0LaQ5l6TZ42.jpg",
+      "adult": false,
+      "overview": "Lamont Cranston, aka The Shadow, investigates the murder of a New Orleans bandleader.",
+      "release_date": "1958-12-02"
+    },
+    {
+      "vote_count": 2,
+      "id": 106902,
+      "video": false,
+      "vote_average": 4,
+      "title": "Avenger X",
+      "popularity": 0.651,
+      "poster_path": "\/gv1kyWTSq5Y4ySKJi7XT2dMeDOk.jpg",
+      "original_language": "en",
+      "original_title": "Avenger X",
+      "genre_ids": [],
       "backdrop_path": null,
       "adult": false,
-      "overview": "An evil lord kidnaps 12 sisters to start his harem, leaving the 13th sister to find a way to free them.",
-      "release_date": "1969-04-17"
+      "overview": "Police find a woman murdered with an X carved in her forehead and naturally assume it was the work of the retired master criminal, Mr. X! The real Mr. X, the man of a million, trillion disguises knows he's innocent of this dirty deed and soon dons his costume again in order to clear his name.",
+      "release_date": "1967-05-17"
     },
     {
       "vote_count": 0,
-      "id": 275663,
+      "id": 351782,
       "video": false,
       "vote_average": 0,
-      "title": "The Lama Avenger",
-      "popularity": 0.6,
-      "poster_path": "/nTqwcAsxZyvp0ggSTWGcI3Qezrw.jpg",
+      "title": "The Mysterious Avenger",
+      "popularity": 0.915,
+      "poster_path": "\/ueNxjl9gApHPNpET9GNIZTigxZ.jpg",
       "original_language": "en",
-      "original_title": "The Lama Avenger",
+      "original_title": "The Mysterious Avenger",
       "genre_ids": [
-        28,
-        18
+        37
       ],
-      "backdrop_path": null,
+      "backdrop_path": "\/6OPaluyOGkXnGxJMpbZJTeBglab.jpg",
       "adult": false,
-      "overview": "When two acrobats are fired for fighting with punks in the audience, they go to live with an aunt who's being pressured to sell her house for a real estate development. The developer's nasty son, Lee Fu, decides to muscle the sale, and soon he's at war with the acrobats, plus their unlikely ally, an American named John who used to be Lee Fu's friend. The acrobats open a kung fu school, the scene of several battles with Lee Fu's thugs. A fight to the death, jail time, auntie's surprise decision, a budding acting career, a possessive girlfriend, a debilitating injury, a friendship that needs recalibrating, and Lee Fu's avenger are all in the mix before the end.",
-      "release_date": "1979-03-15"
+      "overview": "In his second of an unprecedented 131 Westerns for Columbia Pictures, handsome Charles Starrett donned his trademark white Stetson to portray Ranny Maitland, a Texas Ranger whose father (Lafe Mckee) is feuding with his neighbor, Lockhart (Edward Le Saint.) Pretending to be on Lockhart's side in the feud, Ranny goes to investigate. Old man Maitland, meanwhile, is murdered and Lockhart arrested.",
+      "release_date": "1936-01-17"
     }
   ]
 }

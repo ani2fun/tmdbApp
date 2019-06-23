@@ -18,4 +18,7 @@ trait ConfigService {
   val serviceScheme = httpConfig.getString("serviceScheme")
   val serviceUri    = httpConfig.getString("serviceUri")
 
+  val tmdbAPI = config.getString("tmdbAPI")
+  val apiKey  = config.getString("apiKey")
+
 }

@@ -14,8 +14,6 @@ import example.app.services.ConfigService
 import net.codingwell.scalaguice.{ ScalaModule, ScalaPrivateModule }
 import org.slf4j.{ Logger, LoggerFactory }
 
-import example.app.services.ConfigService
-
 class GuiceModule(val config: Config) extends AbstractModule with ScalaModule with ConfigService {
   private val log: Logger = LoggerFactory.getLogger(getClass)
 

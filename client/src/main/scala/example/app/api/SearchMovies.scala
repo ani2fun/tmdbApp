@@ -5,29 +5,22 @@
 package example.app.api
 
 import scala.concurrent.{ ExecutionContext, Future }
+
 import example.app.shared.Movie
 import example.app.utils.api.Api
+import japgolly.scalajs.react.Callback
 
 class SearchMovies(val baseUrl: String) extends Api {
 
-  // https://api.themoviedb.org/3/search/movie?api_key=5fdcb6eafc5f7c6b238952774693c9a9&include_adult=false&page=1&language=en-US&query=the+avengers
+  //https://image.tmdb.org/t/p/w185/hEpWvX6Bp79eLxY1kX5ZZJcme5U.jpg
 
-  private val apiKey = s"5fdcb6eafc5f7c6b238952774693c9a9"
+  def getMovie(movieName: String)(implicit ec: ExecutionContext): Future[Option[Seq[Movie]]] = {
+    Callback.log(s"movieName ---->  $movieName")
+    futureGet[Option[Seq[Movie]]](s"findmovie?moviename=$movieName")
+  }
 
-  def getMovie(movieName: String)(implicit ec: ExecutionContext): Future[Movie] = {
-
-    val queryString = Seq(
-      s"api_key=$apiKey",
-      s"include_adult=false",
-      s"language=en-US",
-      s"query=$movieName"
-    ).mkString("&")
-
-//    futureGet[Movie](s"search/movie?$queryString")
-    futureGet[Movie](s"findmovie?$movieName")
-
-//    println(s"moviename passed $movieName")
-//    Future.successful(Movie(1, Some(movieName), false))
-
+  def getTrendingMovies(implicit ec: ExecutionContext): Future[Option[Seq[Movie]]] = {
+    Callback.log(s"trending movies ----> ")
+    futureGet[Option[Seq[Movie]]](s"trending")
   }
 }

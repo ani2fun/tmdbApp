@@ -5,42 +5,54 @@
 package example.app.components
 
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
-import scala.util.{ Failure, Success }
 
-import japgolly.scalajs.react.{ Callback, _ }
-import example.app.api.TrendingMovies
 import example.app.model.MoviesState
 import example.app.shared.Movie
 import example.app.utils.api.ApiClient
 import japgolly.scalajs.react.component.Scala.Unmounted
 import japgolly.scalajs.react.vdom.html_<^._
+import japgolly.scalajs.react.{ Callback, _ }
 
 // scalastyle:off multiple.string.literals
 object MoviePage {
 
   case class Props(apiClient: ApiClient)
 
-  case class State(movieName: String, movie: Movie, movieListingState: Seq[Movie])
+  case class State(movieName: String, movie: Movie, tendingMovies: Seq[Movie])
 
   class Backend($ : BackendScope[Props, State]) {
 
-    // For searching movies
+    // State updates
+    def movieNameState(name: String): CallbackTo[Unit] = $.modState(_.copy(movieName = name))
 
-    def movieNameState(name: String): CallbackTo[Unit]         = $.modState(_.copy(movieName = name))
     def updateMovieNameInput(e: ReactEventFromInput): Callback = movieNameState(e.target.value)
 
     def updateMovieState(movie: Movie): CallbackTo[Unit] = $.modState(_.copy(movie = movie))
 
-    def searchMovie(name: String, apiClient: ApiClient) = Callback.future {
+    def updateTrendingMoviesState(movies: Seq[Movie]): CallbackTo[Unit] = $.modState(_.copy(tendingMovies = movies))
+
+    // API calls
+    def searchMovie(movieName: String, apiClient: ApiClient)(e: ReactEventFromInput): Callback = Callback.future {
+      e.preventDefault()
+      Callback.info("movieName to search " + movieName)
+
       for {
-        movie <- apiClient.searchMoviesClient.getMovie(name)
+        movie <- apiClient.searchMoviesClient.getMovie(movieName)
       } yield {
-        $.modState(_.copy(movie = movie))
+        val takeFirst = movie.map(_.head).get
+        Callback.log(s"takeFirst : $takeFirst")
+        updateMovieState(takeFirst)
       }
     }
 
-    def onTextChange(e: ReactEventFromInput): Callback =
-      Callback.info("Value received = " + e.target.value)
+    def trendingMovies(apiClient: ApiClient)(e: ReactEventFromInput): Callback = Callback.future {
+      e.preventDefault()
+      for {
+        trending <- apiClient.searchMoviesClient.getTrendingMovies
+      } yield {
+        updateTrendingMoviesState(trending.head)
+      }
+    }
 
     def render(props: Props, state: State): VdomElement =
       <.div(
@@ -79,16 +91,39 @@ object MoviePage {
                 <.button(
                   ^.cls := "btn btn-outline-success my-2 my-sm-0",
                   ^.`type` := "submit",
-                  ^.onClick --> searchMovie(state.movieName, props.apiClient),
+                  ^.onClick ==> searchMovie(state.movieName, props.apiClient),
                   "Search"
                 )
               )
             ),
             <.div(
               ^.cls := "row",
-              <.div(<.span(state.movie.originalTitle))
+              <.div(
+                <.span(state.movie.id),
+                <.hr,
+                <.span(state.movie.original_title),
+                <.hr,
+                <.span(state.movie.overview),
+                <.hr,
+                <.span(state.movie.release_date),
+                <.hr,
+                <.span(state.movie.poster_path)
+              )
+            )
+          ),
+          <.hr,
+          <.div(
+            <.h4("Trending Movies"),
+            <.button(
+              ^.cls := "btn btn-outline-success my-2 my-sm-0",
+              ^.`type` := "submit",
+              ^.onClick ==> trendingMovies(props.apiClient),
+              "Get Trending Movies"
             )
           )
+          /*,
+          <.div(state.tendingMovies.head.originalTitle.get)
+         */
         )
       )
   }

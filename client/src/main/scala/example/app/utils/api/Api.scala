@@ -43,10 +43,19 @@ trait Api {
       case e: Int => Future.failed(new Exception(s"An Error occured: ${res.responseText}"))
     }
   }
-}
 
-object Api {
-  type ApiError = (Int, String)
+  protected def onComplete[Response](
+      successCode: Int
+  )(success: Response => Callback)(implicit decoder: Decoder[Response]): XMLHttpRequest => Callback = res => {
+    res.status match {
+      case `successCode` =>
+        decode[Response](res.responseText) match {
+          case Right(response) => success(response)
+          case Left(e) => error(ApiStatusCodes.INTERNAL_ERROR, e.getMessage)
+        }
+      case e: Int => error(e, res.responseText)
+    }
+  }
 }
 
 object ApiMethods {
