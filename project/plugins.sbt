@@ -11,7 +11,7 @@ addSbtPlugin("org.portable-scala" % "sbt-scalajs-crossproject" % "0.6.0")
 // Faster dependencies fetching
 addSbtPlugin("io.get-coursier"    % "sbt-coursier" % "1.0.3")
 
-addSbtPlugin("com.typesafe.sbt"   % "sbt-native-packager" % "1.3.15")
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.3")
 
 // Coding style
 addSbtPlugin("org.scalastyle"    %% "scalastyle-sbt-plugin" % "1.0.0")
@@ -40,5 +40,3 @@ addSbtPlugin("io.gatling" % "gatling-sbt" % "3.0.0")
 
 //Heroku
 addSbtPlugin("com.heroku" % "sbt-heroku" % "2.1.2")
-
-addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.3")
