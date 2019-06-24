@@ -115,7 +115,8 @@ lazy val server = (project in file("server"))
   .enablePlugins(
     AutomateHeaderPlugin,
     SbtWeb,
-    SbtTwirl
+    SbtTwirl,
+    JavaServerAppPackaging
   )
   .settings(commonSettings)
   .settings(
