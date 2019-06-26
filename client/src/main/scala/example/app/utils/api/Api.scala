@@ -14,7 +14,6 @@ import org.scalajs.dom.ext.{ Ajax => FutureAjax }
 
 // scalastyle:off multiple.string.literals
 trait Api {
-  val MaxPaginationSize = 10000
 
   protected val ContentType           = "Content-Type"
   protected val ApplicationJson       = "application/json"

@@ -18,12 +18,12 @@ object Page {
 
   case class Props(movie: Movie, tendingMovies: Seq[Movie], apiClient: ApiClient)
 
-  case class State(name: String, movie: Movie, tendingMovies: Seq[Movie])
+  case class State(name: String, movie: Movie, trendingMovies: Seq[Movie])
 
   class Backend($ : BackendScope[Props, State]) {
     // State updates
 
-    def updateTrendingMoviesState(movies: Seq[Movie]): CallbackTo[Unit] = $.modState(_.copy(tendingMovies = movies))
+    def updateTrendingMoviesState(movies: Seq[Movie]): CallbackTo[Unit] = $.modState(_.copy(trendingMovies = movies))
 
     // API calls
     def searchMovie(name: String, apiClient: ApiClient): Callback = Callback.future {
@@ -46,7 +46,7 @@ object Page {
     }
 
     def removeFromTrending(movie: Movie): Callback =
-      $.modState(state => state.copy(tendingMovies = state.tendingMovies.filterNot(_.id.contains(movie.id.get))))
+      $.modState(state => state.copy(trendingMovies = state.trendingMovies.filterNot(_.id.contains(movie.id.get))))
 
     def render(props: Props, state: State): VdomElement = {
       Callback.log("render")
@@ -74,7 +74,7 @@ object Page {
           ),
           <.br,
           <.div(
-            state.tendingMovies.toTagMod { movie =>
+            state.trendingMovies.toTagMod { movie =>
               <.div(
                 ^.cls := "row",
                 <.i(
