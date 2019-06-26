@@ -6,7 +6,7 @@ package example.app
 
 import scala.scalajs.js.annotation.JSExport
 
-import example.app.components.MoviePage
+import example.app.components.Page
 import example.app.utils.api.ApiClient
 import japgolly.scalajs.react.extra.router.BaseUrl
 import org.scalajs.dom
@@ -29,7 +29,7 @@ object ReactApp {
 
     val apiClient = new ApiClient(serviceUrl.value)
 
-    MoviePage(apiClient).renderIntoDOM(appContent)
+    Page(apiClient).renderIntoDOM(appContent)
 
   }
 }
