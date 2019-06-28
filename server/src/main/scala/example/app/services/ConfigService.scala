@@ -12,10 +12,8 @@ trait ConfigService {
 
   private val httpConfig = config.getConfig("http")
 
-  val httpHost      = httpConfig.getString("interface")
+  val httpHost      = httpConfig.getString("host")
   val httpPort      = httpConfig.getInt("port")
-  val serviceHost   = httpConfig.getString("serviceHost")
-  val serviceScheme = httpConfig.getString("serviceScheme")
   val serviceUri    = httpConfig.getString("serviceUri")
 
   val tmdbAPI = config.getString("tmdbAPI")
