@@ -1,3 +1,4 @@
+import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
 import org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv
 import sbtcrossproject.CrossPlugin.autoImport.crossProject
 import sbtcrossproject.CrossType
@@ -31,6 +32,7 @@ lazy val library = new Object {
     val popperjs                   = "1.14.7"
     val bootstrap                  = "4.3.0"
     val uPickle                    = "0.7.5"
+    val scalaReflect               = "2.12.8"
   }
   
   val akkaHttp                   = "com.typesafe.akka"            %% "akka-http"              % version.akkaHttp
@@ -45,6 +47,7 @@ lazy val library = new Object {
   val scalaJsScripts             = "com.vmunier"                  %% "scalajs-scripts"        % version.scalaJsScripts
   val logback                    = "ch.qos.logback"               % "logback-classic"         % version.logback
   val uPickle                    = "com.lihaoyi"                  %% "upickle"                % version.uPickle
+  val scalaReflect               = "org.scala-lang"               %  "scala-reflect"          % version.scalaReflect
 
   // js dependencies
   private val npm = "org.webjars.npm"
@@ -116,11 +119,28 @@ lazy val server = (project in file("server"))
     AutomateHeaderPlugin,
     SbtWeb,
     SbtTwirl,
-    JavaServerAppPackaging
+    JavaAppPackaging,
+    DockerPlugin,
+    BuildInfoPlugin,
+    JavaAgent
   )
   .settings(commonSettings)
   .settings(
     parallelExecution in Test := true,
+    packageName in Docker := "tmdbapp",
+    daemonUser in Docker := "root",
+    daemonGroup in Docker := "root",
+    dockerBaseImage := "hseeberger/scala-sbt",
+    dockerUpdateLatest := true,
+    dockerExposedPorts := Seq(9090),
+    dockerCommands ++= Seq(
+      ExecCmd(
+        "RUN",
+        "chmod",
+        "+x",
+        s"${(defaultLinuxInstallLocation in Docker).value}/bin/${executableScriptName.value}"
+      )
+    ),
     devCommands in scalaJSPipeline ++= Seq("test", "testOnly", "doc"),
     scalaJSProjects := Seq(client),
     pipelineStages in Assets := Seq(scalaJSPipeline),
@@ -149,6 +169,7 @@ lazy val server = (project in file("server"))
       library.log4jCore,
       library.log4jApi,
       library.log4jApiImpl,
+      library.scalaReflect
     ),
     libraryDependencies ++= Seq(
       library.fontAwesomeJar,
@@ -280,7 +301,12 @@ addCommandAlias(
 
 // Heroku Deployment
 herokuAppName in Compile := "tmdbdemoapp"
-herokuIncludePaths in Compile := Seq(
-  "server", "server/src/main/resources/application.conf", "server/src/main/public"
+herokuJdkVersion in Compile := "1.8"
+herokuConfigVars in Compile := Map(
+  "HTTP_PORT" -> "9090",
+  "HTTP_SERVICE_URI" -> "https://tmdbdemoapp.herokuapp.com/",
+  "TMDB_API_KEY" -> "5fdcb6eafc5f7c6b238952774693c9a9",
+  "TMDB_API_PATH" -> "https://api.themoviedb.org/3/"
 )
+herokuIncludePaths in Compile := Seq("server")
 herokuSkipSubProjects in Compile := false
