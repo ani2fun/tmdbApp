@@ -20,17 +20,13 @@ lazy val library = new Object {
     val commonsIO                  = "2.6"
     val logback                    = "1.2.3"
     val log4j                      = "2.11.2"
-    val diode                      = "1.1.4"
-    val diodeReact                 = "1.1.4.131"
     val japgollyTestState          = "2.2.4"
     val japgollyTest               = "1.3.1"
     val japgollyTestUtil           = "1.18"
     val react                      = "16.7.0"
     val fontAwesome                = "5.7.1"
     val jquery                     = "3.3.1"
-    val popperjs                   = "1.14.7"
     val bootstrap                  = "4.3.0"
-    val uPickle                    = "0.7.5"
   }
   
   val akkaHttp                   = "com.typesafe.akka"            %% "akka-http"              % version.akkaHttp
@@ -44,7 +40,6 @@ lazy val library = new Object {
   val scalaGuice                 = "net.codingwell"               %% "scala-guice"            % version.scalaGuice
   val scalaJsScripts             = "com.vmunier"                  %% "scalajs-scripts"        % version.scalaJsScripts
   val logback                    = "ch.qos.logback"               % "logback-classic"         % version.logback
-  val uPickle                    = "com.lihaoyi"                  %% "upickle"                % version.uPickle
 
   // js dependencies
   private val npm = "org.webjars.npm"
@@ -57,7 +52,6 @@ lazy val library = new Object {
   val reactDomServer = npm % "react-dom" % version.react / "umd/react-dom-server.browser.development.js" minified "umd/react-dom-server.browser.production.min.js" dependsOn reactDom.jsDep.resourceName
 
   val jquery        = npm % "jquery" % version.jquery
-  val popperjs      = npm % "popper.js" % version.popperjs
   val bootstrap     = npm % "bootstrap" % version.bootstrap
 
   val reactTestUtils = npm % "react-dom" % version.react % Test / "umd/react-dom-test-utils.development.js" minified "umd/react-dom-test-utils.production.min.js" dependsOn reactDom.jsDep.resourceName
@@ -151,7 +145,6 @@ lazy val server = (project in file("server"))
     ),
     libraryDependencies ++= Seq(
       library.fontAwesomeJar,
-      library.popperjs,
       library.jquery,
       library.bootstrap,
     ),
@@ -169,7 +162,6 @@ lazy val client = (project in file("client"))
     scalaJSUseMainModuleInitializer := true,
     jsEnv in Test := new JSDOMNodeJSEnv,
     libraryDependencies ++= Seq(
-      "com.lihaoyi"                       %% "upickle"                      % library.version.uPickle,
       "org.scala-js"                      %%% "scalajs-dom"                 % library.version.scalaJsDom,
       "com.github.japgolly.scalajs-react" %%% "core"                        % library.version.scalaJsReact,
       "com.github.japgolly.scalajs-react" %%% "extra"                       % library.version.scalaJsReact,
@@ -177,9 +169,7 @@ lazy val client = (project in file("client"))
       "com.github.japgolly.scalacss"      %%% "ext-react"                   % library.version.scalaCss,
       "io.circe"                          %%% "circe-core"                  % library.version.circe,
       "io.circe"                          %%% "circe-generic"               % library.version.circe,
-      "io.circe"                          %%% "circe-parser"                % library.version.circe,
-      "io.suzaku"                         %%% "diode"                       % library.version.diode,
-      "io.suzaku"                         %%% "diode-react"                 % library.version.diodeReact
+      "io.circe"                          %%% "circe-parser"                % library.version.circe
     ),
     skip in packageJSDependencies := false,
     crossTarget in (Compile, fullOptJS) := file("js"),
