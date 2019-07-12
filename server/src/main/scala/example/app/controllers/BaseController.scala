@@ -14,7 +14,7 @@ import example.app.twirl.Implicits._
 
 // scalastyle:off multiple.string.literals
 @Singleton
-class BaseController @Inject()()(implicit val ec: ExecutionContext) extends ConfigService with Directives {
+class BaseController @Inject()(implicit val ec: ExecutionContext) extends ConfigService with Directives {
 
   val routes = pathSingleSlash {
     get {
