@@ -26,7 +26,7 @@ class BaseController @Inject()(implicit val ec: ExecutionContext) extends Config
     encodeResponse {
       getFromResource("public/" + file)
     }
-  } ~ path("movie.ico") {
+  } ~ path("favicon.ico") {
     get {
       encodeResponse {
         getFromResource("public/img/movie.ico")
