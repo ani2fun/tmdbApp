@@ -20,10 +20,12 @@ class WebServer @Inject()(
 )(implicit val system: ActorSystem, executor: ExecutionContext, materializer: ActorMaterializer)
     extends ConfigService {
 
+  val port: Int = sys.env.getOrElse("PORT", httpPort.toString).toInt
+
   def bind(): Future[ServerBinding] =
     Http().bindAndHandle(
       apiService.routes,
       httpHost,
-      httpPort
+      port
     )
 }

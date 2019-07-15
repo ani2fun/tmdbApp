@@ -138,6 +138,7 @@ lazy val server = (project in file("server"))
     pipelineStages in Assets := Seq(scalaJSPipeline),
     // triggers scalaJSPipeline when using compile or continuous compilation
     compile in Compile := ((compile in Compile) dependsOn scalaJSPipeline).value,
+    mainClass in compile := Some("example.app.Main"),
     mainClass in run := Some("example.app.Main"),
     dependencyOverrides += library.log4jApi,
     libraryDependencies ++= Seq(

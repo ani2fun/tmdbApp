@@ -12,22 +12,25 @@ import example.app.services.ConfigService
 import net.codingwell.scalaguice.InjectorExtensions._
 import org.slf4j.{ Logger, LoggerFactory }
 
-object Main extends App with ConfigService {
-
+object Main extends ConfigService {
   private val log: Logger = LoggerFactory.getLogger(getClass)
 
-  implicit val system: ActorSystem  = ActorSystem("main-system")
-  implicit val ec: ExecutionContext = system.dispatcher
+  def main(args: Array[String]): Unit = {
 
-  val injector = GuiceInjector.create
+    implicit val system: ActorSystem  = ActorSystem("main-system")
+    implicit val ec: ExecutionContext = system.dispatcher
 
-  injector
-    .instance[WebServer]
-    .bind()
-    .onComplete {
-      case Success(binding) => log.info("HTTP WebServer Bound on {}", binding.localAddress)
-      case Failure(error) => log.error("Failed", error)
-      case _ => system.terminate()
-    }
+    val injector = GuiceInjector.create
+
+    injector
+      .instance[WebServer]
+      .bind()
+      .onComplete {
+        case Success(binding) => log.info("HTTP WebServer Bound on {}", binding.localAddress)
+        case Failure(error) => log.error("Failed", error)
+        case _ => system.terminate()
+      }
+
+  }
 
 }

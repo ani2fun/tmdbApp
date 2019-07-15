@@ -16,7 +16,7 @@ import example.app.twirl.Implicits._
 @Singleton
 class BaseController @Inject()(implicit val ec: ExecutionContext) extends ConfigService with Directives {
 
-  val routes = pathSingleSlash {
+  val routes = pathEndOrSingleSlash {
     get {
       complete {
         example.app.html.index.render(serviceUri)
@@ -26,11 +26,15 @@ class BaseController @Inject()(implicit val ec: ExecutionContext) extends Config
     encodeResponse {
       getFromResource("public/" + file)
     }
-  } ~ path("favicon.ico") {
+  } ~ path("main.ico") {
     get {
       encodeResponse {
         getFromResource("public/img/movie.ico")
       }
+    }
+  } ~ pathEndOrSingleSlash {
+    get {
+      getFromResource("public/img/favicon.ico")
     }
   }
 
