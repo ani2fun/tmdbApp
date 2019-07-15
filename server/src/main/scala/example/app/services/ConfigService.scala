@@ -12,9 +12,9 @@ trait ConfigService {
 
   private val httpConfig = config.getConfig("http")
 
-  val httpHost      = httpConfig.getString("host")
-  val httpPort      = httpConfig.getInt("port")
-  val serviceUri    = httpConfig.getString("serviceUri")
+  val httpHost   = httpConfig.getString("host")
+  val httpPort   = httpConfig.getInt("port")
+  val serviceUri = httpConfig.getString("serviceUri")
 
   val tmdbAPI = config.getString("tmdbAPI")
   val apiKey  = config.getString("apiKey")
