@@ -112,27 +112,12 @@ lazy val server = (project in file("server"))
     SbtWeb,
     SbtTwirl,
     JavaAppPackaging,
-    DockerPlugin,
-    BuildInfoPlugin,
-    JavaAgent
+    BuildInfoPlugin
   )
   .settings(commonSettings)
   .settings(
+    name := "tmdbdemoapp",
     parallelExecution in Test := true,
-    packageName in Docker := "tmdbapp",
-    daemonUser in Docker := "root",
-    daemonGroup in Docker := "root",
-    dockerBaseImage := "hseeberger/scala-sbt",
-    dockerUpdateLatest := true,
-    dockerExposedPorts := Seq(9090),
-    dockerCommands ++= Seq(
-      ExecCmd(
-        "RUN",
-        "chmod",
-        "+x",
-        s"${(defaultLinuxInstallLocation in Docker).value}/bin/${executableScriptName.value}"
-      )
-    ),
     devCommands in scalaJSPipeline ++= Seq("test", "testOnly", "doc"),
     scalaJSProjects := Seq(client),
     pipelineStages in Assets := Seq(scalaJSPipeline),
@@ -285,17 +270,3 @@ addCommandAlias(
   "test",
   "; server/test ; sharedJVM/test; sharedJS/test" // client/test
 )
-
-
-// Heroku Deployment
-herokuAppName in Compile := "tmdbdemoapp"
-herokuJdkVersion in Compile := "1.8"
-herokuConfigVars in Compile := Map(
-  "HTTP_PORT" -> "9090",
-  "HTTP_SERVICE_URI" -> "https://tmdbdemoapp.herokuapp.com/",
-  "TMDB_API_KEY" -> "5fdcb6eafc5f7c6b238952774693c9a9",
-  "TMDB_API_PATH" -> "https://api.themoviedb.org/3/",
-  "HTTP_HOST" -> "tmdbdemoapp.herokuapp.com"
-)
-herokuIncludePaths in Compile := Seq("server")
-herokuSkipSubProjects in Compile := false
