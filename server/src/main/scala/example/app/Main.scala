@@ -17,7 +17,7 @@ object Main extends ConfigService {
   private val log: Logger = LoggerFactory.getLogger(getClass)
 
   def main(args: Array[String]): Unit = {
-    log.debug("Main Method start")
+    log.info("Main Method start")
     implicit val system: ActorSystem  = ActorSystem("main-system")
     implicit val ec: ExecutionContext = system.dispatcher
 
@@ -31,7 +31,7 @@ object Main extends ConfigService {
       .instance[WebServer]
       .startServer("0.0.0.0", port, settings, system)
 
-    log.debug("system terminate. exit main")
+    log.info("system terminate. exit main")
   }
 
 }
