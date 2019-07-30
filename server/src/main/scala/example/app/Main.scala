@@ -26,6 +26,15 @@ object Main extends ConfigService {
     val injector = GuiceInjector.create
 
     val port: Int = sys.env.getOrElse("PORT", httpPort.toString).toInt
+    val host: String = sys.env.getOrElse("HOST", httpHost)
+
+    log.debug(
+      s"""Your system running on port $port , $host , with Server Settings :
+         |DefaultHostHeader: ${settings.defaultHostHeader}
+         |defaultHttpPort: ${settings.defaultHttpPort}
+         |defaultHttpsPort: ${settings.defaultHttpsPort}
+         |rawRequestUriHeader: ${settings.rawRequestUriHeader}
+         |""".stripMargin)
 
     injector
       .instance[WebServer]
