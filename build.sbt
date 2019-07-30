@@ -1,4 +1,3 @@
-import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
 import org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv
 import sbtcrossproject.CrossPlugin.autoImport.crossProject
 import sbtcrossproject.CrossType
@@ -269,9 +268,4 @@ addCommandAlias(
 addCommandAlias(
   "test",
   "; server/test ; sharedJVM/test; sharedJS/test" // client/test
-)
-
-herokuConfigVars in Compile := Map(
-  "TMDB_API_KEY" -> "5fdcb6eafc5f7c6b238952774693c9a9",
-  "TMDB_API_PATH" -> "https://api.themoviedb.org/3/"
 )

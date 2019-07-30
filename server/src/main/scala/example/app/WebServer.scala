@@ -29,7 +29,6 @@ class WebServer @Inject()(
 
   override protected def postHttpBindingFailure(cause: Throwable): Unit = {
     val sys = systemReference.get()
-
     sys.log.debug(s"The server could not be started due to $cause")
   }
 }

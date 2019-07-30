@@ -31,7 +31,7 @@ object Main extends ConfigService {
       .instance[WebServer]
       .startServer("0.0.0.0", port, settings, system)
 
-    log.debug("system terminate")
+    log.debug("system terminate. exit main")
   }
 
 }
