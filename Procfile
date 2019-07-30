@@ -1,1 +1,1 @@
-web: server/target/universal/stage/bin/tmdbdemoapp -Dhttp.port=$PORT
+web: server/target/universal/stage/bin/tmdbdemoapp -Dhttp.port=$HTTP_PORT
