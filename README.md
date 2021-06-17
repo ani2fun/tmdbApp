@@ -1,4 +1,4 @@
-# Example Movie App (Skeleton scalajs-react-akka-http)
+# Example Movie App (playground scalajs-react-akka-http)
 ---
 
 ## Stack
