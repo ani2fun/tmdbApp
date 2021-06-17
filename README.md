@@ -24,5 +24,5 @@ Backend API EndPoint to test locally ->
 GET -> ``http://localhost:9090/findmovie?moviename="avengers"``
 GET -> ``http://localhost:9090/trending``
 
-
+#### In case API key is not valid please generate new one at (https://www.themoviedb.org) and update application.conf for the same
 
